@@ -1,0 +1,74 @@
+.stickyBottomWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  pointer-events: none; /* Allows clicking through wrapper */
+}
+
+.adPlaceholder {
+  background-color: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  pointer-events: auto; /* Re-enable clicks for the ad itself */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 0.85rem;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.stickyBottomWrapper .adPlaceholder {
+  width: 100%;
+  max-width: 728px;
+  height: 90px;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.adLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Sidebar Ad */
+.sidebarAd {
+  width: 100%;
+  min-height: 600px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 90px; /* Below navbar */
+}
+
+/* In-Article Ad */
+.inArticleAd {
+  width: 100%;
+  min-height: 250px;
+  margin: 2rem 0;
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+}
+
+/* In-Feed Ad */
+.inFeedAd {
+  width: 100%;
+  min-height: 300px;
+  background-color: #f1f5f9;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+}
