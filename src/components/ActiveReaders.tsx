@@ -3,18 +3,35 @@
 import { useState, useEffect } from "react";
 
 export default function ActiveReaders() {
+  // Simple traffic curve based on hour of day (0-23)
+  const getBaseReaders = () => {
+    if (typeof window === "undefined") return 1243;
+    const hour = new Date().getHours();
+    const trafficCurve = [
+      420, 310, 210, 160, 180, 250, 480, 720, 890, 1020, 1150, 1280,
+      1350, 1220, 1180, 1310, 1540, 1810, 2050, 2190, 2310, 2450, 1950, 850
+    ];
+    const base = trafficCurve[hour] || 1243;
+    // Add +/- 10% random variance at initial load
+    const variance = Math.floor((Math.random() * 0.2 - 0.1) * base);
+    return Math.max(100, base + variance);
+  };
+
   const [readers, setReaders] = useState(1243);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    // Randomize readers count every 3-7 seconds to simulate real traffic
+    setReaders(getBaseReaders());
+
+    // Randomize readers count every 4-8 seconds
     const interval = setInterval(() => {
       setReaders((prev) => {
-        const change = Math.floor(Math.random() * 15) - 5; // -5 to +10
-        return Math.max(800, Math.min(2500, prev + change));
+        const change = Math.floor(Math.random() * 11) - 5; // -5 to +5
+        // Keep it realistic between 50 and 3500
+        return Math.max(50, Math.min(3500, prev + change));
       });
-    }, Math.random() * 4000 + 3000);
+    }, Math.random() * 4000 + 4000);
 
     return () => clearInterval(interval);
   }, []);
