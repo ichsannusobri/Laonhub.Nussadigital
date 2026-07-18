@@ -3,7 +3,6 @@ import styles from "./Home.module.css";
 import InFeedAd from "@/components/ads/InFeedAd";
 import SidebarAd from "@/components/ads/SidebarAd";
 import LiveTicker from "@/components/LiveTicker";
-import ActiveReaders from "@/components/ActiveReaders";
 import { getAllPosts } from "@/lib/markdown";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       </div>
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <ActiveReaders />
           <h1>Financial, Legal, & Insurance Secrets Unveiled</h1>
           <p>Learn asset protection strategies, maximize insurance claims, and build your wealth with our exclusive guides.</p>
           <Link href="/category/guides" className="btn btn-primary">Read Latest Guide</Link>
