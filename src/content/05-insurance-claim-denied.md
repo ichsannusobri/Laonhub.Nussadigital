@@ -4,6 +4,7 @@ description: "A denial is not the end. Insurers count on you giving up. Here's e
 date: "2026-06-29"
 category: "Insurance"
 cpm_niche: "Insurance Claims"
+author: "sarah-chen"
 ---
 
 Insurance companies deny valid claims every day. Some denials are legitimate. Many are not. The difference between accepting a denial and getting paid often comes down to knowing four words: *I'm appealing this decision.*

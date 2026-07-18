@@ -4,6 +4,7 @@ description: "You insured your car and your life. You forgot the thing most like
 date: "2026-06-29"
 category: "Insurance"
 cpm_niche: "Disability Insurance"
+author: "sarah-chen"
 ---
 
 Here's a statistic the life insurance industry would rather you not focus on: **you are 3x more likely to become disabled during your working years than to die.**

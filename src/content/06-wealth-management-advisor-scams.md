@@ -4,6 +4,7 @@ description: "Most advisors are paid to sell, not to grow your money. Here's how
 date: "2026-06-29"
 category: "Wealth Management"
 cpm_niche: "Wealth Management"
+author: "ichsan-nusobri"
 ---
 
 The financial advisory industry has a dirty secret: most advisors are legally allowed to recommend products that are good for them — not for you. This is called the "suitability standard," and it's weaker than it sounds.

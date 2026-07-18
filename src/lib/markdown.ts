@@ -11,6 +11,7 @@ export type PostMetadata = {
   date: string;
   category: string;
   cpm_niche: string;
+  author: string;
 };
 
 export function getPostSlugs() {

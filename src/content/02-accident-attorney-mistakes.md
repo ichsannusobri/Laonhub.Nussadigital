@@ -4,6 +4,7 @@ description: "The wrong lawyer costs you thousands. Know exactly what to ask bef
 date: "2026-06-29"
 category: "Legal"
 cpm_niche: "Accident Attorney"
+author: "michael-zhang"
 ---
 
 After a car accident, you're in pain, overwhelmed, and suddenly everyone has advice. Here's the problem: the wrong attorney — or the wrong timing — can slash your settlement by 30–50%.

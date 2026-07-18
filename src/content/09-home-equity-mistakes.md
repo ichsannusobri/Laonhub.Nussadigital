@@ -4,6 +4,7 @@ description: "HELOC, cash-out, or second mortgage? Most people choose wrong and 
 date: "2026-06-29"
 category: "Mortgage"
 cpm_niche: "Home Equity / Mortgage"
+author: "takeshi-mori"
 ---
 
 Home equity is the largest asset most families own — and one of the most mismanaged. With rates higher than they were two years ago, choosing the wrong equity product in 2025 can cost tens of thousands over the life of your borrowing.

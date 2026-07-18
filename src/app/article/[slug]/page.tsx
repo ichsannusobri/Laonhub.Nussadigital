@@ -4,6 +4,7 @@ import styles from "./Article.module.css";
 import InArticleAd from "@/components/ads/InArticleAd";
 import SidebarAd from "@/components/ads/SidebarAd";
 import { getPostBySlug, getPostSlugs } from "@/lib/markdown";
+import { authors } from "@/lib/data";
 
 export function generateStaticParams() {
   const posts = getPostSlugs();
@@ -15,7 +16,14 @@ export function generateStaticParams() {
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  const post = getPostBySlug(slug, ['title', 'date', 'content', 'category', 'cpm_niche']);
+  const post = getPostBySlug(slug, ['title', 'date', 'content', 'category', 'cpm_niche', 'author']);
+  
+  const author = authors[post.author] || {
+    name: "Editorial Team",
+    avatar: "https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg",
+    role: "Senior Financial Advisor",
+    slug: "editorial"
+  };
   
   // Custom markdown components to inject Ads automatically after specific elements
   let paragraphCount = 0;
@@ -46,10 +54,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </div>
             <h1>{post.title}</h1>
             <div className={styles.author}>
-              <div className={styles.authorAvatar}></div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={author.avatar} alt={author.name} className={styles.authorAvatar} style={{ objectFit: 'cover' }} />
               <div>
-                <strong>By Editorial Team</strong>
-                <span>Niche: {post.cpm_niche}</span>
+                <strong>By <Link href={`/author/${author.slug}`} style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>{author.name}</Link></strong>
+                <span>{author.role} • Niche: {post.cpm_niche}</span>
               </div>
             </div>
           </header>

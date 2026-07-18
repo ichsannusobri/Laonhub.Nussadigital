@@ -4,6 +4,7 @@ description: "Insurers profit when you stay uninformed. Here's what to demand be
 date: "2026-06-29"
 category: "Insurance"
 cpm_niche: "Life Insurance"
+author: "sarah-chen"
 ---
 
 Most people buy life insurance the wrong way — and pay tens of thousands of dollars more than they should. Your agent earns commission, not salary. That changes everything about the advice you receive.

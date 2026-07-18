@@ -4,6 +4,7 @@ description: "Bitcoin millionaires don't pay what you think. These legal strateg
 date: "2026-06-29"
 category: "Wealth Management"
 cpm_niche: "Crypto Wealth Management"
+author: "ichsan-nusobri"
 ---
 
 The crypto tax code is confusing by design — and most investors overpay by thousands. Meanwhile, high-net-worth holders work with specialists who exploit every legal advantage the IRS allows.

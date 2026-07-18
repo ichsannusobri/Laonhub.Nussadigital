@@ -4,6 +4,7 @@ description: "Property owners have lawyers on retainer. You have 60 minutes to l
 date: "2026-06-29"
 category: "Legal"
 cpm_niche: "Personal Injury Attorney"
+author: "michael-zhang"
 ---
 
 Slip and fall cases are won and lost in the first hour after the incident. Property owners and their insurers move fast to document their version of events. You need to move faster.

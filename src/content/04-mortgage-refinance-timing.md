@@ -4,6 +4,7 @@ description: "Refinancing feels smart. Without these calculations, it often isn'
 date: "2026-06-29"
 category: "Mortgage"
 cpm_niche: "Mortgage Refinancing"
+author: "takeshi-mori"
 ---
 
 Interest rates drop and refinancing feels obvious. But thousands of homeowners refinance at exactly the wrong time — paying thousands in closing costs they never recoup. Here's how to know if refinancing actually makes sense for you.
