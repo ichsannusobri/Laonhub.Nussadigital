@@ -1,5 +1,4 @@
 import LiveTicker from "@/components/LiveTicker";
-import ActiveReaders from "@/components/ActiveReaders";
 import AdminForm from "@/components/AdminForm";
 import { getAllPosts } from "@/lib/markdown";
 
@@ -14,7 +13,6 @@ export default function AdminDashboard() {
           <h1 style={{ fontSize: "2.5rem", marginBottom: "0.5rem" }}>Admin Dashboard</h1>
           <p style={{ color: "var(--color-text-muted)" }}>Paste your ChatGPT Markdown output here to publish instantly.</p>
         </div>
-        <ActiveReaders />
       </div>
       
       <AdminForm />
